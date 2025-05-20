@@ -6,4 +6,4 @@ Es necesario installar desde la terminal para utilizar algunos componentes:
   npm i cordova-sqlite-storage
   npm install @ionic/storage-angular
   npm install localforage
-  -
+  
