@@ -7,14 +7,22 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 
 import { Tab1PageRoutingModule } from './tab1-routing.module';
 
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { PipesModule } from '../pipes/pipes.module';
+import { ComponentesModule } from '../componentes/componentes.module';
+
+
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    Tab1PageRoutingModule
+    Tab1PageRoutingModule,
+    PipesModule,
+    ComponentesModule
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [Tab1Page]
 })
 export class Tab1PageModule {}
